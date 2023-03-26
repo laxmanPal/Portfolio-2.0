@@ -1,50 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Michroma&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-body::before{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-    opacity: .03;
-    z-index: 1000;
-    pointer-events: none;
-    background-image: url(/gif/noise.gif);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    opacity: 1;
-    
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.03;
+  z-index: 1000;
+  pointer-events: none;
+  background-image: url(/gif/noise.gif);
 }
 
-.video-background{
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -999;
+body {
+  font-size: 14px;
 }
 
-.video-background>video{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Bebas neue", sans-serif;
+  color: #101118;
+  line-height: 1;
+  font-weight: 400;
 }
 
-.navbar-container{
-    background-color: rgba(50, 50, 50, 1);
+header {
+  opacity: 1;
 }
 
-.logo{
-    width: 100px;
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -999;
 }
 
-.nav-item{
-    list-style: none;
+.video-background > video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.nav-link{
-    color: aliceblue !important;
-    text-decoration: none !important;
-    font-size: 15px !important;
+.navbar-container {
+  background-color: rgba(50, 50, 50, 1);
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: aliceblue !important;
+  text-decoration: none !important;
+  font-size: 15px !important;
+}
+
+main {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.container-large {
+  width: 100%;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.hero-text {
+  display: flex;
+  max-width: 65em;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-column-gap: 1.25rem;
+  grid-row-gap: 1rem;
+}
+
+.text-color-dim-grey {
+  color: #5e6065;
+}
+
+.heading-huge {
+  font-size: 7.6rem;
+}
+
+.image-container {
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.fit-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle-image {
+  border-radius: 100%;
+}
+
+.image-center {
+  width: 8rem;
+  height: 5.5rem;
 }
