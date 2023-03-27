@@ -20,7 +20,9 @@ body::before {
 }
 
 body {
+  color: #101118;
   font-size: 14px;
+  line-height: 20px;
 }
 
 h1,
@@ -29,13 +31,77 @@ h2 {
   margin-bottom: 0;
   font-family: "Bebas neue", sans-serif;
   color: #101118;
-  line-height: 1;
+  line-height: 1 !important;
   font-weight: 400;
 }
+
+/* Navbar */
 
 header {
   opacity: 1;
 }
+
+.navbar-container {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+.logo {
+  width: 80px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: aliceblue !important;
+  text-decoration: none !important;
+  font-size: 15px !important;
+}
+
+/* Mobile Menu */
+
+.mobile-menu-container {
+  display: none;
+}
+
+.mobile-menu {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+.mobile-menu div {
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.mobile-menu.active div:nth-child(1) {
+  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+}
+
+.mobile-menu.active div:nth-child(2) {
+  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+}
+
+/* Video */
 
 .video-background {
   position: absolute;
@@ -51,23 +117,7 @@ header {
   height: 100%;
 }
 
-.navbar-container {
-  background-color: rgba(50, 50, 50, 1);
-}
-
-.logo {
-  width: 100px;
-}
-
-.nav-item {
-  list-style: none;
-}
-
-.nav-link {
-  color: aliceblue !important;
-  text-decoration: none !important;
-  font-size: 15px !important;
-}
+/* Hero */
 
 main {
   padding-right: 2.5rem;
@@ -84,13 +134,13 @@ main {
 .hero {
   position: relative;
   z-index: 1;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 6rem;
 }
 
 .hero-text {
   display: flex;
-  max-width: 65em;
+  max-width: 60em;
   margin-right: auto;
   margin-bottom: 4rem;
   margin-left: auto;
@@ -127,5 +177,124 @@ main {
 
 .image-center {
   width: 8rem;
-  height: 5.5rem;
+  /* height: 5.5rem; */
+  height: fit-content;
+}
+
+.social {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.github {
+  display: flex;
+  overflow: hidden;
+  width: 11rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 40px;
+  background-color: #101118;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.github:hover {
+  border: 1px solid #000;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button-divider-line {
+  width: 7rem;
+  height: 1px;
+  background-color: #202026;
+}
+
+.linkden {
+  display: flex;
+  overflow: hidden;
+  width: 11rem;
+  height: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 40px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.linkden:hover {
+  border: 1px solid #000;
+  color: #ffffff;
+  background-color: #000;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .logo {
+    width: 50px;
+  }
+
+  main {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+
+  .hero {
+    margin-top: 5rem;
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.3rem;
+  }
+
+  .heading-huge {
+    font-size: 3rem;
+  }
+  .image-container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .image-center {
+    width: 4em;
+    /* height: 2.5rem; */
+  }
+
+  .github {
+    width: 190px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .button-divider-line {
+    width: 2.6rem;
+  }
+
+  .linkden {
+    width: 190px;
+    height: 40px;
+    font-size: 13px;
+  }
 }
