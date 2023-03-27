@@ -134,7 +134,7 @@ main {
 .hero {
   position: relative;
   z-index: 1;
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-bottom: 6rem;
 }
 
@@ -158,6 +158,12 @@ main {
 
 .heading-huge {
   font-size: 7.6rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.char{
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }
 
 .image-container {
@@ -169,6 +175,8 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }
 
 .circle-image {
@@ -179,6 +187,7 @@ main {
   width: 8rem;
   /* height: 5.5rem; */
   height: fit-content;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .social {
@@ -187,6 +196,12 @@ main {
   margin-left: auto;
   justify-content: center;
   align-items: center;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.social-link{
+  transform: translateY(115px);
+  transition: transform 0.5s;
 }
 
 .github {
