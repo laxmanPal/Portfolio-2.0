@@ -10,7 +10,7 @@ const headingText = new SplitType('.heading-huge')
 
 gsap.to(".char" , {
   y:0,
-  stagger:0.05,
+  stagger:0.005,
   delay : 0.5,
   duration : 0.1
 })
@@ -27,4 +27,17 @@ gsap.to(".social-link" , {
   stagger:0.05,
   delay : 0.5,
   duration : 0.1
+})
+
+gsap.to(".curve" , {
+  y:0,
+  stagger:0.5,
+  delay : 0.5,
+  duration : 0.5
+})
+gsap.to(".about" , {
+  y:0,
+  stagger:0.5,
+  delay : 0.5,
+  duration : 0.5
 })
