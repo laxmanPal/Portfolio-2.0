@@ -93,16 +93,19 @@ header {
   margin-bottom: 10px;
   border-radius: 3px;
   transition: 0.5s;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
 .mobile-menu.active div:nth-child(1) {
-  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
 }
 
 .mobile-menu.active div:nth-child(2) {
-  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
 }
 
 /* Video */
@@ -115,7 +118,7 @@ header {
   z-index: -999;
 }
 
-.video-background>video {
+.video-background > video {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -138,7 +141,7 @@ main {
 .hero {
   position: relative;
   z-index: 1;
-  margin-top: 6rem;
+  margin-top: 2rem;
   margin-bottom: 6rem;
 }
 
@@ -146,7 +149,7 @@ main {
   display: flex;
   max-width: 60em;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-left: auto;
   flex-direction: row;
   justify-content: center;
@@ -263,7 +266,7 @@ main {
   overflow: hidden;
 }
 
-.curve{
+.curve {
   background-image: none;
   transform: translateY(250px);
   /* transition: transform 0.5s; */
@@ -271,35 +274,150 @@ main {
 
 .about-section img {
   width: 100%;
-
 }
 
-.about{
+.about {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   transform: translateY(250px);
   background-color: #101118;
 }
-
-/* Scrolling Text */
-
-.scrolling-text {
-  width: 100%;
-  height: 150px;
-  /* background: #000; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.name h1,
+.skills h1,
+.education h1,
+.experience h1 {
+  font-family: "Bebas neue", sans-serif;
+  font-size: 6.8rem;
+  letter-spacing: 5px;
+  color: #f0f2f5;
 }
 
-.scroll {
-  font-size: 7.6rem;
-  color: #5e60651c;
-  letter-spacing: 50px;
+.skills,
+.education,
+.experience {
+  padding: 6rem 0;
+}
+
+.my-intro {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; */
+  padding: 6rem 0;
+}
+
+/* .name {
+  width: 40vw;
+} */
+
+.name h2 {
+  font-family: "Bebas neue", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: #5e6065;
+}
+
+.dis {
+  /* width: 40vw; */
+  padding-right: 200px;
+}
+
+.dis p {
+  font-size: 20px;
+  color: #adb5bd;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Skills */
+
+.skills img {
+  width: 100px;
+  padding: 2rem 1rem 0 0;
+}
+
+/* Education */
+
+/* .education h1 .experience h1 {
+  font-family: "Bebas neue", sans-serif;
+  font-size: 6.8rem;
+  letter-spacing: 5px;
+  color: #f0f2f5;
+} */
+
+.edu .school-name,
+.exp .role {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-family: "Bebas neue", sans-serif;
+  color: #f0f2f5;
+}
+
+.edu {
+  /* width: 40vw; */
+  padding-right: 200px;
+}
+
+.edu .board {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #adb5bd;
+  padding: 10px 0;
+}
+
+.edu {
+  padding: 6rem 0 0 0;
+}
+
+/* Experience */
+
+/* .experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+} */
+
+/* .experience h1 {
+  font-family: "Bebas neue", sans-serif;
+  font-size: 6.8rem;
+  letter-spacing: 5px;
+  color: #f0f2f5;
+} */
+
+.exp-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.exp {
+  /* width: 40vw; */
+  padding-right: 200px;
+}
+
+.exp .campany {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #adb5bd;
+  padding: 10px 0;
+}
+
+.exp p {
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #adb5bd;
+  padding: 10px 0;
+  text-align: justify;
 }
 
 @media (max-width: 480px) {
-
   .hero-section {
     width: 100%;
     height: 90vh;

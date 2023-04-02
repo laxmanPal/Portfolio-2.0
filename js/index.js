@@ -6,38 +6,38 @@ mobileMenuContainer.addEventListener("click", (e) => {
   mobileMenu.classList.toggle("active");
 });
 
-const headingText = new SplitType('.heading-huge')
+const headingText = new SplitType(".heading-huge");
 
-gsap.to(".char" , {
-  y:0,
-  stagger:0.005,
-  delay : 0.5,
-  duration : 0.1
-})
+gsap.to(".char", {
+  y: 0,
+  stagger: 0.005,
+  delay: 0.5,
+  duration: 0.1,
+});
 
-gsap.to(".fit-cover-image" , {
-  y:0,
-  stagger:0.05,
-  delay : 0.5,
-  duration : 0.1
-})
+gsap.to(".fit-cover-image", {
+  y: 0,
+  stagger: 0.05,
+  delay: 0.5,
+  duration: 0.1,
+});
 
-gsap.to(".social-link" , {
-  y:0,
-  stagger:0.05,
-  delay : 0.5,
-  duration : 0.1
-})
+gsap.to(".social-link", {
+  y: 0,
+  stagger: 0.05,
+  delay: 0.5,
+  duration: 0.1,
+});
 
-gsap.to(".curve" , {
-  y:0,
-  stagger:0.5,
-  delay : 0.5,
-  duration : 0.5
-})
-gsap.to(".about" , {
-  y:0,
-  stagger:0.5,
-  delay : 0.5,
-  duration : 0.5
-})
+gsap.to(".curve", {
+  y: 0,
+  stagger: 0.5,
+  delay: 0.5,
+  duration: 0.5,
+});
+gsap.to(".about", {
+  y: 0,
+  stagger: 0.5,
+  delay: 0.5,
+  duration: 0.5,
+});
