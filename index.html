@@ -15,48 +15,49 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="hero-section">
-      <header class="w-100">
+    <header id="header" class="w-100">
+      <div
+        class="container p-4 d-flex justify-content-center align-items-center"
+      >
         <div
-          class="container p-4 d-flex justify-content-center align-items-center"
+          class="row navbar-container w-100 rounded-2 d-flex align-items-center"
         >
+          <div class="logo-container col d-flex align-items-center">
+            <a href=""
+              ><img src="/images/logo.png" alt="logo" class="logo"
+            /></a>
+          </div>
+          <ul class="menu col h-100 mb-0">
+            <li class="nav-item">
+              <a href="" class="nav-link py-4 px-4"
+                ><span class="text-uppercase">project</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link py-4 px-4"
+                ><span class="text-uppercase">about</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link py-4 px-4"
+                ><span class="text-uppercase">contact</span></a
+              >
+            </li>
+          </ul>
           <div
-            class="row navbar-container w-100 rounded-2 d-flex align-items-center"
+            id="mobile-menu-container"
+            class="mobile-menu-container col h-100 mb-0"
           >
-            <div class="logo-container col d-flex align-items-center">
-              <a href=""
-                ><img src="/images/logo.png" alt="logo" class="logo"
-              /></a>
-            </div>
-            <ul class="menu col h-100 mb-0">
-              <li class="nav-item">
-                <a href="" class="nav-link py-4 px-4"
-                  ><span class="text-uppercase">project</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link py-4 px-4"
-                  ><span class="text-uppercase">about</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link py-4 px-4"
-                  ><span class="text-uppercase">contact</span></a
-                >
-              </li>
-            </ul>
-            <div
-              id="mobile-menu-container"
-              class="mobile-menu-container col h-100 mb-0"
-            >
-              <div class="mobile-menu">
-                <div></div>
-                <div></div>
-              </div>
+            <div class="mobile-menu">
+              <div></div>
+              <div></div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <section class="hero-section">
+
       <main class="w-100">
         <div class="container container-large">
           <div class="hero">
@@ -132,17 +133,29 @@
             <img src="images/icons/nodejs.png" alt="Node.js" />
             <img src="images/icons/express.png" alt="Express.js" />
             <img src="images/icons/mongodb.png" alt="Mongo.DB" />
-            <img src="images/icons/wordpress.png" alt="" />
           </div>
         </div>
-        <div class="education">
+        <div class="educations">
           <h1>education</h1>
           <div class="edu">
+           <div class="education">
             <h5 class="school-name">St. Thomas High School</h5>
             <h6 class="board">
-              SSC 10<sup>th</sup><br />
-              <span class="period">sep 2022 - present</span>
+              SSC 10<sup>th</sup>
             </h6>
+          </div>
+          <div class="education">
+            <h5 class="school-name">Thakur College of Science and Commerce</h5>
+            <h6 class="board">
+              HSC 12<sup>th</sup>
+            </h6>
+          </div>
+          <div class="education">
+            <h5 class="school-name">Yashwantrao Chavan Maharashtra Open University</h5>
+            <h6 class="board">
+              Bachelor of Computer Applications (BCA)
+            </h6>
+          </div>
           </div>
         </div>
         <div class="experience">
@@ -154,7 +167,6 @@
                 connivia teach solutions <br />
                 <span class="period">sep 2022 - dec 2022</span>
               </h6>
-              <hr style="color: aliceblue; opacity: 1" />
             </div>
             <div class="exp">
               <h5 class="role">MERN developer</h5>
@@ -162,7 +174,6 @@
                 connivia teach solutions <br />
                 <span class="period">Jan 2023 - present</span>
               </h6>
-              <hr style="color: aliceblue; opacity: 1" />
             </div>
           </div>
         </div>

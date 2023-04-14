@@ -32,6 +32,16 @@ h2 {
 
 header {
   opacity: 1;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .78);
+  position: sticky;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  display: block;
+  z-index: 1;
+  transition: 0.5s ;
 }
 
 .navbar-container {
@@ -80,19 +90,16 @@ header {
   margin-bottom: 10px;
   border-radius: 3px;
   transition: 0.5s;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
 .mobile-menu.active div:nth-child(1) {
-  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
 }
 
 .mobile-menu.active div:nth-child(2) {
-  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
 }
 
 /* Hero */
@@ -110,8 +117,6 @@ main {
 }
 
 .hero {
-  position: relative;
-  z-index: 1;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -196,34 +201,30 @@ main {
 
 /* About */
 
+.about-section {
+  text-align: center;
+}
+
 .name h1,
 .skills h1,
-.education h1,
+.educations h1,
 .experience h1 {
   font-family: "Bebas neue", sans-serif;
   font-size: 6.8rem;
   letter-spacing: 5px;
-  color: #f0f2f5;
+  color: #101118;
 }
 
 .skills,
-.education,
+.educations,
 .experience {
   padding: 6rem 0;
-}
-
-.name h2 {
-  font-family: "Bebas neue", sans-serif;
-  font-size: 4rem;
-  letter-spacing: 5px;
-  color: #5e6065;
 }
 
 /* About Me */
 
 .about-me {
   width: 100%;
-  /* height: 100vh; */
   margin: 4rem 0;
 }
 
@@ -256,23 +257,50 @@ main {
 
 /* Skills */
 
+.skills {
+  text-align: center;
+}
+
 .skills img {
   width: 100px;
   padding: 2rem 1rem 0 0;
 }
 
-/* Education */
+/* educations */
 
 .edu .school-name,
 .exp .role {
   font-size: 2.5rem;
   letter-spacing: 3px;
   font-family: "Bebas neue", sans-serif;
-  color: #f0f2f5;
+  color: #adb5bd;
 }
 
-.edu {
-  padding-right: 200px;
+.education , .exp {
+  background-color: #f5f5f7;
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  box-shadow: 0.2px 0.2px 5px #dcdce1;
+  transition: 0.5s;
+}
+
+.education:nth-child(3) {
+  width: 1000px;
+}
+
+.education:hover , .exp:hover {
+  box-shadow: 5px 5px 20px #dcdce1;
+  transform: translateY(-5px);
+}
+
+.edu , .exp-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .edu .board {
@@ -289,17 +317,6 @@ main {
 }
 
 /* Experience */
-
-.exp-box {
-  margin-top: 25px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.exp {
-  padding-right: 200px;
-}
 
 .exp .campany {
   font-size: 1rem;
@@ -320,7 +337,8 @@ main {
   text-align: justify;
 }
 
-@media (max-width: 480px) {
+/* Mobile devices (up to 480 pixels) */
+@media screen and (max-width: 480px) {
   .hero-section {
     width: 100%;
     height: 90vh;
@@ -363,6 +381,20 @@ main {
     font-size: 4.5rem;
   }
 
+  .my-intro {
+    padding: 2rem 0;
+}
+
+  .name h1, .skills h1, .educations h1, .experience h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+}
+.dis p {
+  font-size: 15px;
+  line-height: 23px;
+  text-align: justify;
+}
+
   .github {
     width: 130px;
     height: 40px;
@@ -377,5 +409,25 @@ main {
     width: 130px;
     height: 40px;
     font-size: 13px;
+  }
+}
+
+
+/* Tablets (between 481 and 768 pixels) */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+
+/* Small desktops/laptops (between 769 and 1024 pixels) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Large desktops/laptops (greater than 1024 pixels) */
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .heading-huge {
+    font-size: 17rem;
   }
 }

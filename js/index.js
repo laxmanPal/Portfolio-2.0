@@ -1,43 +1,27 @@
+// Header Scrolling 
+
+const header = document.getElementById("header");
+
+let prevScrollY = window.pageYOffset;
+window.addEventListener('scroll', () => {
+  const currentScrollY = window.pageYOffset;
+
+  const isScrollingDown = currentScrollY > prevScrollY;
+
+  if (isScrollingDown) {
+    header.style.transform = 'translateY(-100%)';
+  } else {
+    header.style.transform = 'translateY(0)';
+  }
+  prevScrollY = currentScrollY;
+});
+
+// Mobile Navbar
+
 const mobileMenuContainer = document.getElementById("mobile-menu-container");
 
 const mobileMenu = document.querySelector(".mobile-menu");
 
 mobileMenuContainer.addEventListener("click", (e) => {
   mobileMenu.classList.toggle("active");
-});
-
-const headingText = new SplitType(".heading-huge");
-
-gsap.to(".char", {
-  y: 0,
-  stagger: 0.005,
-  delay: 0.5,
-  duration: 0.1,
-});
-
-gsap.to(".fit-cover-image", {
-  y: 0,
-  stagger: 0.05,
-  delay: 0.5,
-  duration: 0.1,
-});
-
-gsap.to(".social-link", {
-  y: 0,
-  stagger: 0.05,
-  delay: 0.5,
-  duration: 0.1,
-});
-
-gsap.to(".curve", {
-  y: 0,
-  stagger: 0.5,
-  delay: 0.5,
-  duration: 0.5,
-});
-gsap.to(".about", {
-  y: 0,
-  stagger: 0.5,
-  delay: 0.5,
-  duration: 0.5,
 });
