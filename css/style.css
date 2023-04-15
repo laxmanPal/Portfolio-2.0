@@ -33,7 +33,7 @@ h2 {
 header {
   opacity: 1;
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, .78);
+  background-color: rgba(255, 255, 255, 0.78);
   position: sticky;
   top: 0%;
   bottom: auto;
@@ -41,7 +41,7 @@ header {
   right: 0%;
   display: block;
   z-index: 1;
-  transition: 0.5s ;
+  transition: 0.5s;
 }
 
 .navbar-container {
@@ -90,16 +90,19 @@ header {
   margin-bottom: 10px;
   border-radius: 3px;
   transition: 0.5s;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
 .mobile-menu.active div:nth-child(1) {
-  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
 }
 
 .mobile-menu.active div:nth-child(2) {
-  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+  transform: translate3d(0px, -6px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
 }
 
 /* Hero */
@@ -271,12 +274,13 @@ main {
 .edu .school-name,
 .exp .role {
   font-size: 2.5rem;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-family: "Bebas neue", sans-serif;
   color: #adb5bd;
 }
 
-.education , .exp {
+.education,
+.exp {
   background-color: #f5f5f7;
   width: 500px;
   padding: 20px;
@@ -291,12 +295,14 @@ main {
   width: 1000px;
 }
 
-.education:hover , .exp:hover {
+.education:hover,
+.exp:hover {
   box-shadow: 5px 5px 20px #dcdce1;
   transform: translateY(-5px);
 }
 
-.edu , .exp-box {
+.edu,
+.exp-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -310,10 +316,6 @@ main {
   font-weight: 400;
   color: #adb5bd;
   padding: 10px 0;
-}
-
-.edu {
-  padding: 6rem 0 0 0;
 }
 
 /* Experience */
@@ -341,7 +343,7 @@ main {
 @media screen and (max-width: 480px) {
   .hero-section {
     width: 100%;
-    height: 90vh;
+    height: 35vh;
   }
 
   .menu {
@@ -355,7 +357,7 @@ main {
   }
 
   .navbar-container {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .logo {
@@ -365,10 +367,6 @@ main {
   main {
     padding-right: 1.25rem;
     padding-left: 1.25rem;
-  }
-
-  .hero {
-    margin-top: 5rem;
   }
 
   .hero-text {
@@ -383,17 +381,20 @@ main {
 
   .my-intro {
     padding: 2rem 0;
-}
+  }
 
-  .name h1, .skills h1, .educations h1, .experience h1 {
+  .name h1,
+  .skills h1,
+  .educations h1,
+  .experience h1 {
     font-size: 4rem;
-    letter-spacing: 5px;
-}
-.dis p {
-  font-size: 15px;
-  line-height: 23px;
-  text-align: justify;
-}
+    letter-spacing: 1px;
+  }
+  .dis p {
+    font-size: 15px;
+    line-height: 23px;
+    text-align: justify;
+  }
 
   .github {
     width: 130px;
@@ -412,22 +413,14 @@ main {
   }
 }
 
-
 /* Tablets (between 481 and 768 pixels) */
-@media screen and (min-width: 481px) and (max-width: 768px) {}
-
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
 
 /* Small desktops/laptops (between 769 and 1024 pixels) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
 
 /* Large desktops/laptops (greater than 1024 pixels) */
 @media screen and (min-width: 1200px) {
-  .hero {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-  }
-
-  .heading-huge {
-    font-size: 17rem;
-  }
 }

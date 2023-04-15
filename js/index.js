@@ -1,17 +1,17 @@
-// Header Scrolling 
+// Header Scrolling
 
 const header = document.getElementById("header");
 
 let prevScrollY = window.pageYOffset;
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   const currentScrollY = window.pageYOffset;
 
   const isScrollingDown = currentScrollY > prevScrollY;
 
   if (isScrollingDown) {
-    header.style.transform = 'translateY(-100%)';
+    header.style.transform = "translateY(-100%)";
   } else {
-    header.style.transform = 'translateY(0)';
+    header.style.transform = "translateY(0)";
   }
   prevScrollY = currentScrollY;
 });
