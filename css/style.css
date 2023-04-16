@@ -260,10 +260,11 @@ main {
 .scrolling {
   display: flex;
   justify-content: flex-start;
-  overflow: hidden;
+  overflow-x: hidden;
   position: absolute;
   left: 2%;
   top: -20%;
+  width: 98vw;
 }
 
 .back {
