@@ -444,6 +444,10 @@ main {
   width: 600px;
 }
 
+#projects .item .left .img:hover img {
+  transform: scale(1.1);
+}
+
 #projects .item .left .img img {
   object-fit: cover;
   transition: 0.3s ease transform;
@@ -512,6 +516,9 @@ footer {
 
 /* Mobile devices (up to 480 pixels) */
 @media screen and (max-width: 480px) {
+  body {
+    cursor: none;
+  }
   .hero-section {
     width: 100%;
     height: 35vh;

@@ -60,3 +60,66 @@ links.forEach((link) => {
     outerCursor.style.display = "block";
   });
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".navbar-container", {
+  y: -80,
+  opacity: 0,
+});
+
+gsap.from(".logo", {
+  y: 30,
+  opacity: 0,
+  delay: 0.5,
+});
+
+gsap.from(".nav-link", {
+  y: 10,
+  opacity: 0,
+  stagger: 0.3,
+  delay: 1,
+});
+
+gsap.from(".heading-huge", {
+  y: 50,
+  opacity: 0,
+  stagger: 0.3,
+  delay: 0.8,
+});
+
+gsap.from(".social-link", {
+  y: 10,
+  opacity: 0,
+  stagger: 0.3,
+  delay: 1.5,
+});
+
+gsap.from(".name", {
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".about-me",
+  },
+});
+
+gsap.from(".para", {
+  x: 50,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".about",
+  },
+});
+
+gsap.from(".techImg", {
+  scale: 0,
+  opacity: 0,
+  // duration: 1,
+  stagger: 0.09,
+  scrollTrigger: {
+    trigger: ".techImg",
+  },
+});
