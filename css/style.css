@@ -90,6 +90,43 @@ header {
   box-shadow: 1px 1px 10px #323232;
 }
 
+.mobile-navbar{
+  height: 0;
+  padding: 0 !important;
+  transition: 0.5s;
+}
+
+.mobile-navbar.active{
+  height: 200px;
+  padding: 0.5rem !important;
+}
+
+.menu-mobile{
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 15px;
+  display: none;
+  transition: 0.5s;
+}
+
+.menu-mobile.active{
+  display: flex;
+}
+
+.mobile-nav-item{
+  list-style: none;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mobile-nav-link{
+    color: aliceblue !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+}
+
 .logo {
   width: 80px;
 }

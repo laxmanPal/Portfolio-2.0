@@ -21,9 +21,13 @@ window.addEventListener("scroll", () => {
 const mobileMenuContainer = document.getElementById("mobile-menu-container");
 
 const mobileMenu = document.querySelector(".mobile-menu");
+const mobileNavbar = document.querySelector(".mobile-navbar");
+const menuMobile = document.querySelector(".menu-mobile");
 
 mobileMenuContainer.addEventListener("click", (e) => {
   mobileMenu.classList.toggle("active");
+  mobileNavbar.classList.toggle("active");
+  menuMobile.classList.toggle("active");
 });
 
 // Cursor
