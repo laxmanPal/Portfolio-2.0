@@ -555,11 +555,11 @@ footer {
 /* Mobile devices (up to 480 pixels) */
 @media screen and (max-width: 480px) {
   .inner-cursor {
-    display: none;
+    display: none !important;
   }
 
   .outer-cursor {
-    display: none;
+    display: none !important;
   }
 
   .hero-section {
